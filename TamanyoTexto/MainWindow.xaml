@@ -1,0 +1,15 @@
+﻿<Window x:Class="TamanyoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TamanyoTexto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="PruebaTextblock" Text="Desarrollo de Interfaces" FontSize="24" Margin="51,81,90,185" RenderTransformOrigin="0.239,-1.648" />
+        <RadioButton x:Name="ButtonPequeño" Content="Pequeño" Margin="51,321,570,44" FontSize="36" SizeChanged="TamañoTexto_SizeChanged"/>
+        <RadioButton x:Name="ButtonMediano" Content="Mediano" Margin="222,308,352,49" FontSize="48" RenderTransformOrigin="0.82,-0.196" SizeChanged="TamañoTexto_SizeChanged"/>
+        <RadioButton x:Name="ButtonGrande" Content="Grande" Margin="445,282,85,26" FontSize="72" RenderTransformOrigin="0.82,-0.196" SizeChanged="TamañoTexto_SizeChanged"/>
+    </Grid>
+</Window>
