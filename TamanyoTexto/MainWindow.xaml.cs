@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-
+using System.Windows.Controls;
 
 namespace TamanyoTexto
 {
@@ -9,20 +9,10 @@ namespace TamanyoTexto
         {
             InitializeComponent();
         }
-        private void TamañoTexto_SizeChanged(object sender, SizeChangedEventArgs e)
+
+        private void TamañoTexto_Checked(object sender, RoutedEventArgs e)
         {
-            if (sender == ButtonPequeño)
-            {
-                PruebaTextblock.FontSize = 36;
-            }
-            if (sender == ButtonMediano)
-            {
-                PruebaTextblock.FontSize = 48;
-            }
-            if(sender == ButtonGrande)
-            {
-                PruebaTextblock.FontSize = 72;
-            }
+            PruebaTextblock.FontSize = double.Parse((sender as RadioButton).Tag.ToString());
         }
     }
 }
